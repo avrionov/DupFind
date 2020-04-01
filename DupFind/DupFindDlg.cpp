@@ -173,7 +173,7 @@ BEGIN_MESSAGE_MAP(CDupFindDlg, CResizableDialog)
 	ON_MESSAGE (WM_FD_PROGRESS, OnProgress)
 	ON_MESSAGE (WM_FD_CALC, OnCalc)
 	ON_MESSAGE (WM_FD_END, OnEndScan)
-	ON_MESSAGE (WM_FD_END, OnStartScan)
+	//ON_MESSAGE (WM_FD_END, OnStartScan)
 	ON_NOTIFY(LVN_GETDISPINFO, IDC_DUPLIST, OnLvnGetdispinfoDuplist)
 	ON_BN_DOUBLECLICKED(IDC_SELECTFOLDERS, OnBnDoubleclickedSelectfolders)
 	ON_BN_DOUBLECLICKED(IDC_SELECT, OnBnDoubleclickedSelect)
@@ -424,7 +424,9 @@ void scan (const TCHAR * path, CWnd *pWnd)
 
 	CString mask = path;
 	SureBackSlash (mask);
-	mask += "\\*.*";
+	mask += "*.*";
+
+	TRACE("Scanning %s", (LPCWSTR)path);
 
 	if( !ff.FindFile(mask) )
 	{
@@ -487,7 +489,9 @@ void scan_fast (const TCHAR * path, CWnd *pWnd)
 
 	CString mask = path;
 	SureBackSlash (mask);
-	mask += "\\*.*";
+	mask += "*.*";
+
+	TRACE(TEXT("Scanning %s\n"), (LPCWSTR)path);
 
 	if( !ff.FindFile(mask) )
 	{
@@ -850,7 +854,7 @@ void CDupFindDlg::OnBnClickedScan()
 	gMax = m_Max * 1024;
 
 	if (gMax == 0) gMax = ULLONG_MAX;
-
+	
 	gStopFlag = 0;
 
 	OnStartEnable ();
@@ -1015,7 +1019,7 @@ LRESULT CDupFindDlg::OnEndScan(WPARAM wP, LPARAM lP)
 
 	m_Stamp.End();	
 	
-	tmp.Format(_T("Files: %d"), digests.size());
+	tmp.Format(_T("Files: %d"), scanned);
 	m_bar.SetPaneText(1, tmp);
 
 	tmp.Format(_T("Dups: %d"), dups.size());

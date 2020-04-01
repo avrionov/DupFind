@@ -20,6 +20,7 @@
 //  Copyright © 2020 Nikolay Avrionov
 //  This file is part of project: DupFind
 //
+
 #include "stdafx.h"
 #include "DupFind.h"
 #include "AboutDlg.h"

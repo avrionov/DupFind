@@ -111,7 +111,7 @@ public:
 	void SelectItem (int item, int subitem, bool bSelect);
 
 	//CEvent m_StopEvent;
-	int m_nSortCol;
+	int m_nSortCol;	
 	bool m_bAsc;
 	CButton m_Delete;	
 	afx_msg void OnBnClickedStop();
@@ -136,6 +136,7 @@ public:
 	CImageList m_ImageList;
 	CMenuButton m_SelectFolderBtn;
 	CMenuButton m_SelectBtn;
+
 
 public:
 	afx_msg void OnBnClickedWildcards();
