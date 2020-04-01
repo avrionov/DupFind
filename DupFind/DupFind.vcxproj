@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9123B76F-DDCE-44DE-AF95-85A77B1A0F3F}</ProjectGuid>
+    <RootNamespace>DupFind</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <UseOfMfc>Static</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>14.0.25123.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>Debug\</OutDir>
+    <IntDir>Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>Release\</OutDir>
+    <IntDir>Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)\Separators;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions</EnableEnhancedInstructionSet>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)\Separators;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AboutDlg.cpp" />
+    <ClCompile Include="ACEdit\ACEdit.cpp" />
+    <ClCompile Include="ACEdit\ACListWnd.cpp" />
+    <ClCompile Include="CmdLineParser.cpp" />
+    <ClCompile Include="Crc32\Crc32Dynamic.cpp" />
+    <ClCompile Include="Crc32\Crc32Static.cpp" />
+    <ClCompile Include="DupFind.cpp" />
+    <ClCompile Include="DupFindDlg.cpp" />
+    <ClCompile Include="FileDigest.cpp" />
+    <ClCompile Include="FileOperation.cpp" />
+    <ClCompile Include="HyperLink.cpp" />
+    <ClCompile Include="ListControlMem.cpp" />
+    <ClCompile Include="Md5\MD5.cpp" />
+    <ClCompile Include="MenuButton.cpp" />
+    <ClCompile Include="MyDropTarget.cpp" />
+    <ClCompile Include="ResizableLib\ResizableDialog.cpp" />
+    <ClCompile Include="ResizableLib\ResizableGrip.cpp" />
+    <ClCompile Include="ResizableLib\ResizableLayout.cpp" />
+    <ClCompile Include="ResizableLib\ResizableMinMax.cpp" />
+    <ClCompile Include="ResizableLib\ResizableMsgSupport.cpp" />
+    <ClCompile Include="ResizableLib\ResizableState.cpp" />
+    <ClCompile Include="ResizableLib\ResizableVersion.cpp" />
+    <ClCompile Include="ResizableLib\ResizableWndState.cpp" />
+    <ClCompile Include="Separators\Separator.cpp" />
+    <ClCompile Include="Separators\StaticSeparator.cpp" />
+    <ClCompile Include="Separators\VisualStylesXP.cpp" />
+    <ClCompile Include="Settings.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SysImageList.cpp" />
+    <ClCompile Include="Themes.cpp" />
+    <ClCompile Include="WildCardSelect.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AboutDlg.h" />
+    <ClInclude Include="ACEdit\ACEdit.h" />
+    <ClInclude Include="ACEdit\ACListWnd.h" />
+    <ClInclude Include="CmdLineParser.h" />
+    <ClInclude Include="Crc32\Common.h" />
+    <ClInclude Include="Crc32\Crc32Dynamic.h" />
+    <ClInclude Include="Crc32\Crc32Static.h" />
+    <ClInclude Include="DupFind.h" />
+    <ClInclude Include="DupFindDlg.h" />
+    <ClInclude Include="FileDigest.h" />
+    <ClInclude Include="FileOperation.h" />
+    <ClInclude Include="HyperLink.h" />
+    <ClInclude Include="ListControlMem.h" />
+    <ClInclude Include="Md5\global.h" />
+    <ClInclude Include="Md5\md5.h" />
+    <ClInclude Include="MenuButton.h" />
+    <ClInclude Include="MyDropTarget.h" />
+    <ClInclude Include="ResizableLib\ResizableDialog.h" />
+    <ClInclude Include="ResizableLib\ResizableGrip.h" />
+    <ClInclude Include="ResizableLib\ResizableLayout.h" />
+    <ClInclude Include="ResizableLib\ResizableMinMax.h" />
+    <ClInclude Include="ResizableLib\ResizableMsgSupport.h" />
+    <ClInclude Include="ResizableLib\ResizableState.h" />
+    <ClInclude Include="ResizableLib\ResizableVersion.h" />
+    <ClInclude Include="ResizableLib\ResizableWndState.h" />
+    <ClInclude Include="ResizeDialog.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="Separators\Separator.h" />
+    <ClInclude Include="Separators\StaticSeparator.h" />
+    <ClInclude Include="Separators\Tmschema.h" />
+    <ClInclude Include="Separators\Uxtheme.h" />
+    <ClInclude Include="Separators\VisualStylesXP.h" />
+    <ClInclude Include="Settings.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="SysImageList.h" />
+    <ClInclude Include="Themes.h" />
+    <ClInclude Include="WildCardSelect.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\ExplorerXP - Unicode 1.07\res\LogoXPQ.bmp" />
+    <Image Include="res\DupFind.ico" />
+    <Image Include="res\hdrdown.bmp" />
+    <Image Include="res\hdrup.bmp" />
+    <Image Include="res\LogoXPQ.bmp" />
+    <Image Include="res\toolbar1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DupFind.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\DupFind.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="res\DupFind.manifest">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="DupFind.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

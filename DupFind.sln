@@ -1,0 +1,38 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29926.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DupFind", "DupFind\DupFind.vcxproj", "{9123B76F-DDCE-44DE-AF95-85A77B1A0F3F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Itanium = Debug|Itanium
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Itanium = Release|Itanium
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9123B76F-DDCE-44DE-AF95-85A77B1A0F3F}.Debug|Itanium.ActiveCfg = Debug|Win32
+		{9123B76F-DDCE-44DE-AF95-85A77B1A0F3F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9123B76F-DDCE-44DE-AF95-85A77B1A0F3F}.Debug|Win32.Build.0 = Debug|Win32
+		{9123B76F-DDCE-44DE-AF95-85A77B1A0F3F}.Debug|x64.ActiveCfg = Debug|Win32
+		{9123B76F-DDCE-44DE-AF95-85A77B1A0F3F}.Debug|x86.ActiveCfg = Debug|Win32
+		{9123B76F-DDCE-44DE-AF95-85A77B1A0F3F}.Debug|x86.Build.0 = Debug|Win32
+		{9123B76F-DDCE-44DE-AF95-85A77B1A0F3F}.Release|Itanium.ActiveCfg = Release|Win32
+		{9123B76F-DDCE-44DE-AF95-85A77B1A0F3F}.Release|Win32.ActiveCfg = Release|Win32
+		{9123B76F-DDCE-44DE-AF95-85A77B1A0F3F}.Release|Win32.Build.0 = Release|Win32
+		{9123B76F-DDCE-44DE-AF95-85A77B1A0F3F}.Release|x64.ActiveCfg = Release|Win32
+		{9123B76F-DDCE-44DE-AF95-85A77B1A0F3F}.Release|x86.ActiveCfg = Release|Win32
+		{9123B76F-DDCE-44DE-AF95-85A77B1A0F3F}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D7C4956F-3DE6-4A78-B469-1730352C9AC2}
+	EndGlobalSection
+EndGlobal
